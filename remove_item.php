@@ -5,19 +5,7 @@ $username = "root"; // MySQL username
 $password = "Champ2118!"; // MySQL password
 $database = "halloween_shop"; // Name of the MySQL database you want to connect to 
 
-// Check if user_id exists in session
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php"); // Redirect to login page if user is not logged in
-    exit();
-}
 
-// Database connection details
-$servername = "localhost";
-$username = "root"; // Default username for MySQL in XAMPP
-$password = "";     // No password by default
-$database = "Project"; // Database name
-
-// Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
 // Check connection
