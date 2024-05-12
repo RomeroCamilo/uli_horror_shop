@@ -9,8 +9,17 @@
 <body>
     <h2>Sign Out</h2>
     <p>Are you sure you want to sign out?</p>
-    <form action="signout.php" method="post">
+    <form action="signout.php" method="post" id="signoutForm">
         <input type="submit" value="Sign Out">
     </form>
+
+    <script>
+        // Redirect to login.html after signing out
+        document.getElementById("signoutForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Redirect to login.html
+            window.location.href = "login.html";
+        });
+    </script>
 </body>
 </html>
