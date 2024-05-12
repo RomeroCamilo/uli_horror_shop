@@ -1,6 +1,6 @@
 <?php
-$servername = "romerocamilo.database.windows.net";
-$username = "camilo"; // Default username for MySQL in XAMPP
+$servername = "34.31.197.231";
+$username = "root"; // Default username for MySQL in XAMPP
 $password = "Champ2118!";     // No password by default
 $database = "halloween_shop"; //database name
 
